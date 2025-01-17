@@ -128,9 +128,9 @@ export const allProjects = [
     id: 1,
     image: sneakersAppImg,
     cardTitle: "Sneakers App",
-    typeOfProject: "E-shop",
+    typeOfProject: "App",
     link: "https://sneakers-app-2-dejvcodes.netlify.app",
-    githubLink: false,
+    githubLink: "https://github.com/DejvCodes/Sneakers-App-2",
   },
   {
     id: 2,
