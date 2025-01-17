@@ -59,7 +59,7 @@ export const socials = [
     icon: <FaLinkedin />,
   },
   {
-    link: "mailto:dejvios@seznam.cz",
+    link: "mailto:dejvcodes@gmail.com",
     icon: <FaEnvelope />,
   },
 ]
