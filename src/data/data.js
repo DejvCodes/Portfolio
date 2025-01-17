@@ -176,7 +176,7 @@ export const contacts = [
   {
     icon: <FaEnvelope />,
     network: "E-mail",
-    link: "mailto:dejvios@seznam.cz",
+    link: "mailto:dejvcodes@gmail.com",
     text: "dejvcodes@gmail.com",
   },
   {
