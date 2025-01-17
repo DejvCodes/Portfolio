@@ -1,0 +1,226 @@
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../images/background1.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0 0 0;
+}
+.home-data {
+  width: 100%;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+h2.my-name {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--light-blue);
+  margin-bottom: 0.1rem;
+  margin-left: 2px;
+}
+h1.home-title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semi-bold);
+  line-height: 3.5rem;
+  margin-bottom: 1.1rem;
+}
+p.home-description {
+  width: 530px;
+  font-size: var(--p-font-size);
+  margin-bottom: 1.5rem;
+}
+.home-buttons a {
+  width: 170px;
+  font-size: var(--a-font-size);
+  font-family: var(--body-font);
+  font-weight: var(--font-semi-bold);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.35rem 1.5rem;
+  border-radius: 45px;
+  transition: all 0.2s linear;
+  border: 2px solid transparent;
+}
+.home-buttons a.home-button.first-btn {
+  background: var(--light-blue);
+  color: var(--body-color);
+  margin-right: 1.2rem;
+}
+.home-buttons a.home-button.first-btn:hover {
+  background: var(--body-color);
+  color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+  transform: scale(1.03);
+}
+.home-buttons a.home-button.second-btn {
+  background: var(--body-color);
+  color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+}
+.home-buttons a.home-button.second-btn:hover {
+  background: var(--light-blue);
+  color: var(--body-color);
+  transform: scale(1.03);
+}
+.home-img {
+  width: 58%;
+  animation: bounce 3000ms alternate infinite cubic-bezier(1, 1, 0, 0);
+  filter: drop-shadow(0 0 13px rgb(0, 187, 255));
+}
+@keyframes bounce {
+  from { transform: translateY(0px) }
+  to { transform: translateY(-15px) }
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media screen and (max-width: 1550px) {
+  .home-img {
+    width: 53%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .home {
+    text-align: center;
+  }
+  .home-container {
+    flex-direction: column;
+  }
+  .home-data {
+    margin-bottom: 5rem;
+  }
+  h2.my-name {
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+  h1.home-title {
+    line-height: 3.7rem;
+    margin-bottom: 1.5rem;
+  }
+  p.home-description {
+    width: 100%;
+    text-align: center;
+    padding-inline: 3rem;
+    margin-bottom: 2rem;
+  }
+  .home-buttons a {
+    width: 170px;
+    padding: 0.5rem 1.5rem;
+  }
+  .home-img {
+    width: 53%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .home {
+    min-height: 100%;  
+  }
+  .home-container {
+    margin: 10rem 0 0 0;
+  }
+  .home-data {
+    margin-bottom: 4rem;
+  }
+  h2.my-name {
+    margin-bottom: 0.3rem;
+  }
+  h1.home-title {
+    line-height: 3.2rem;
+    margin-bottom: 1rem;
+  }
+  p.home-description {
+    padding-inline: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .home-container {
+    justify-content: flex-start;
+    margin: 10rem 0 3rem 0;
+  }
+  .home-data {
+    margin-bottom: 3rem;
+  }
+  h2.my-name {
+    margin-bottom: 0.7rem;
+  }
+  h1.home-title {
+    line-height: 2.8rem;
+    margin-bottom: 1.2rem;
+  }
+  p.home-description {
+    padding-inline: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .home-img {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .home-container {
+    margin: 7rem 0 1rem 0;
+  }
+  .home-data {
+    margin-bottom: 2.5rem;
+  }
+  h2.my-name {
+    margin-bottom: 0.1rem;
+  }
+  h1.home-title {
+    line-height: 2.3rem;
+    margin-bottom: 1rem;
+  }
+  p.home-description {
+    font-size: calc(var(--p-font-size) - 0.13rem);
+    padding-inline: 0.2rem;
+    margin-bottom: 1.3rem;
+  }
+  .home-buttons a {
+    width: 150px;
+    padding: 0.3rem 1.3rem;
+  }
+  .home-buttons a.home-button.first-btn {
+    margin-right: 0.7rem;
+  }
+  .home-img {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .home-container {
+    margin: 7rem 0 0 0;
+  }
+  h2.my-name {
+    margin-bottom: 0.2rem;
+  }
+  h1.home-title {
+    line-height: 1.7rem;
+    margin-bottom: 0.7rem;
+  }
+  p.home-description {
+    padding-inline: 0;
+    margin-bottom: 1rem;
+  }
+  .home-buttons a {
+    width: 110px;
+    padding: 0.3rem 1.3rem;
+  }
+  .home-img {
+    width: 75%;
+  }
+}

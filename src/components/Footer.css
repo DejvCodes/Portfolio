@@ -1,0 +1,11 @@
+footer {
+  width: 100%;
+  height: 3rem;
+  color: var(--text-color);
+  background: #141414;
+  font-family: var(--body-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

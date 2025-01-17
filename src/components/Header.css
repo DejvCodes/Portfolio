@@ -1,0 +1,178 @@
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.2rem;
+  background: var(--body-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  /* box-shadow: 0 0 12px 1px rgb(9, 180, 241, 0.7); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+header .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-dejvcodes {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+.logo-dejvcodes a {
+  color: var(--text-color);
+  font-size: calc(var(--header-font-size) + 0.85rem);
+  font-family: var(--header-font);
+  font-weight: var(--font-bold);
+}
+a span.span-name {
+  color: var(--light-blue);
+}
+a span.span-dot {
+  animation: span-dotAnimation 2000ms infinite;
+} 
+@keyframes span-dotAnimation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+nav.navigation .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.one-link a {
+  position: relative;
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-size: var(--header-font-size);
+  font-weight: 500;
+  transition: all 0.2s linear;
+  padding-inline: 1rem;
+}
+.one-link a:hover {
+  color: var(--light-blue);
+}
+.one-link a::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 2.5px;
+  left: 50%;
+  bottom: -18px;
+  background: var(--light-blue);
+  border-radius: 20px;
+  transition: all 0.2s ease-out, left 0.2s ease-out;
+}
+.one-link a:hover:after,
+.one-link a.active::after {
+  width: 100%;
+  left: 0;
+  bottom: -6px;
+}
+.one-link a.active {
+  color: var(--light-blue);
+}
+.burger-menu {
+  padding-top: 2px;
+  display: none;
+  z-index: 10000;
+  cursor: pointer;
+}
+.burger-menu div {
+  width: 25px;
+  height: 3px;
+  background: var(--text-color);
+  transition: transform 0.4s;
+  margin-block: 5px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media screen and (max-width: 1550px) {
+  nav.navigation .nav-links {
+    gap: 0.4rem;
+  }
+  .logo-dejvcodes {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 870px) {
+  .logo-dejvcodes {
+    padding: 0.5rem 0.5rem 0.1rem 0;
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+  nav.navigation .nav-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    min-height: 100vh;
+    background: transparent;
+    background: var(--body-color);
+    box-shadow: -1px 0 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: all 0.4s ease-in !important;
+    gap: 3.5rem;
+    padding-bottom: 8rem;
+  }
+  nav.navigation .nav-links.show {
+    transform: translateX(0);
+  }
+  .one-link.fade {
+    animation: navLinkFade 0.5s ease forwards calc(var(--i) / 7 * 1s);
+  }
+  @keyframes navLinkFade {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  .one-link {
+    opacity: 0;
+  }
+  .burger-menu {
+    display: inline;
+  }
+  .line1 {
+    transform: rotate(-45deg) translate(-5.5px, 6px);
+    background: var(--light-blue) !important;
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background: var(--light-blue) !important;
+  }
+}
+@media screen and (max-width: 570px) {
+  header.header {
+    height: 3.7rem;
+  }
+  nav.navigation .nav-links {
+    width: 65%;
+    gap: 2rem;
+    padding-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  nav.navigation .nav-links {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 250px) {
+  nav.navigation .nav-links {
+    width: 90%;
+  }
+}

@@ -1,0 +1,160 @@
+/* ------------------- GOOGLE FONTS ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ------------------- VARIABLES CSS ------------------- */
+:root {
+  --body-color: #101010;
+  --text-color: #FFFFFF;
+  --black-color: #000000;
+  --light-blue: #09B4F1;
+  --grey-color: #929292;
+  /* ----------------- FONT & TYPOGRAPHY ----------------- */
+  /* 0.5rem = 8px | 1rem = 16px  ...*/
+  --header-font: "Source Sans 3", sans-serif;
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 3.3rem;
+  --subtitle-font-size: 2.2rem;
+  --social-networks-font-size: 1.7rem;
+  --h2-font-size: 1.5rem;
+  --a-font-size: 1.2rem;
+  --p-font-size: 1.1rem;
+  --header-font-size: 1.4rem;
+  --smaller-p-font: 1rem;
+
+  /*----------------- FONT WEIGHT -----------------*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media screen and (max-width: 1750px) {
+  :root {
+    --header-font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  :root {
+    --biggest-font-size: 3.7rem;
+    --subtitle-font-size: 2.7rem;
+    --social-networks-font-size: 2.5rem;
+    --h2-font-size: 2.3rem;
+    --header-font-size: 1.8rem;
+    --p-font-size: 1.5rem;
+    --smaller-p-font: 1.4rem;
+    --a-font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  :root {
+    --biggest-font-size: 3.2rem;
+    --social-networks-font-size: 2.4rem;
+    --subtitle-font-size: 2.3rem;
+    --header-font-size: 1.8rem;
+    --h2-font-size: 1.7rem;
+    --p-font-size: 1.3rem;
+    --smaller-p-font: 1.2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --subtitle-font-size: 2rem;
+    --h2-font-size: 1.8rem;
+    --header-font-size: 1.5rem;
+    --p-font-size: 1.1rem;
+    --smaller-p-font: 0.95rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  :root {
+    --biggest-font-size: 2.15rem;
+    --subtitle-font-size: 1.75rem;
+    --h2-font-size: 1.5rem;
+    --header-font-size: 1.4rem;
+    --p-font-size: 0.95rem;
+    --a-font-size: 1rem;
+    --smaller-p-font: 0.9rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  :root {
+    --biggest-font-size: 1.5rem;
+    --subtitle-font-size: 1.47rem;
+    --header-font-size: 1.2rem;
+    --h2-font-size: 1.1rem;
+    --p-font-size: 0.9rem;
+    --a-font-size: 0.9rem;
+    --smaller-p-font: 0.77rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth !important;
+  -webkit-scroll-behavior: smooth !important;
+  -moz-scroll-behavior: smooth !important;
+}
+body {
+  font-family: var(--body-font);
+  background: var(--body-color);
+  columns: var(--text-color);
+}
+button,
+input {
+  outline: none;
+  border: none;
+}
+main {
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1350px;
+  margin-inline: 1.5rem !important;
+}
+::-webkit-scrollbar {
+  width: 0.7rem;
+  background: var(--body-color);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.7rem;
+  background: var(--light-blue);
+  cursor: pointer;
+}
+::selection {
+  background: var(--light-blue);
+  color: var(--body-color);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media screen and (max-width: 1750px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .container {
+    margin-inline: 1.8rem !important;
+  }
+}
+@media screen and (max-width: 770px) {
+  .container {
+    margin-inline: 0.8rem !important;
+  }
+}
