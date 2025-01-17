@@ -122,6 +122,7 @@ export const allProjects = [
     cardTitle: "ReesutCut",
     typeOfProject: "Website",
     link: "https://reesutcut.cz",
+    githubLink: false,
   },
   {
     id: 1,
@@ -153,14 +154,14 @@ export const allProjects = [
     cardTitle: "DejvCodes",
     typeOfProject: "Website",
     link: "https://dejvcodes.netlify.app/",
-    githubLink: "",
+    githubLink: "https://github.com/DejvCodes/Portfolio-DejvCodes",
   },
   {
     id: 5,
     image: travelIsLifeImg,
     cardTitle: "Travel Is Life",
     typeOfProject: "Website",
-    link: "travel",
+    link: "https://travel-is-life-dejvcodes.netlify.app/",
     githubLink: false,
   }
 ]
