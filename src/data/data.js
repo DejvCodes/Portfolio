@@ -60,7 +60,7 @@ export const socials = [
   },
   {
     link: "mailto:dejvcodes@gmail.com",
-    icon: <FaEnvelope />,
+    icon: <FaEnvelope />, 
   },
 ]
 
