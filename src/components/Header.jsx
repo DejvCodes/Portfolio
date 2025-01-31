@@ -23,7 +23,7 @@ const Header = () => {
         const sectionHeight = oneSection.offsetHeight
         if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight - 50) {
           currentSection = oneSection.getAttribute("id")
-          console.log(currentSection)
+          // console.log(currentSection)
         }
       })
       setActiveSection(currentSection)
