@@ -11,7 +11,7 @@ const AboutMeSection = () => {
           I'm Front-End Developer at the beginning of my career and I really enjoy improving my coding skills, 
           developing applications and websites.
         </p>
-        <p className="about-me-second-description">Fan of cars, motorbikes, travelling,
+        <p className="about-me-second-description">Fan of cars, motorbikes, traveling,
           good coffee and of course coding.
         </p>
         <p className="about-me-third-description">Most of the time I'm coding or I'm in the gym.</p>

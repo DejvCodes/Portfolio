@@ -126,11 +126,11 @@ h2.contact-title {
     box-shadow: 0 0 7px 3px rgb(9, 180, 241), inset 0 0 3px rgb(9, 180, 241);
     border-radius: 14px;
     padding: 1.2rem;
-    margin: 0.7rem;
+    margin: 0.8rem;
   }
   .contact-one-card h2,
   .contact-one-card h2 i {
-    font-size: calc(var(--h2-font-size) - 0.1rem);
+    font-size: calc(var(--h2-font-size) - 0.3rem);
   }
   .contact-one-card a {
     font-size: calc(var(--a-font-site) - 0.05rem);
@@ -147,6 +147,5 @@ h2.contact-title {
 @media screen and (max-width: 370px) {
   h2.contact-title{
     font-size: calc(var(--h2-font-size) + 0.55rem);
-
   }
 }

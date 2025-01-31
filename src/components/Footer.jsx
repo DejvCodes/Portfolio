@@ -2,7 +2,7 @@ import "./Footer.css"
 
 const Footer = () => {
   return <footer>
-    <p>© 2024 David Kalmus</p>
+    <p>© 2025 David Kalmus</p>
   </footer>
 }
 
