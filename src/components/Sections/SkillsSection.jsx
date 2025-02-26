@@ -13,10 +13,16 @@ const SkillsSection = () => {
           <span> (client side of the web)</span>.
         </p>
         <p className="skills-second-description">
-          I primarily focus on <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> and
+          I primarily focus on <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> and 
+          the modern library <span>React</span>. I consider React JS as my main working tool. I find 
+          it very useful for front-end development. I'm currently learning more about <span>TypeScript</span>, 
+          and in the future, I plan to learn <span>Tailwind</span>.
+          {/* I primarily focus on <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span> and
           modern library <span>React</span>. I consider React JS as my main working tool. I find
-          it very useful for front-end development. I also have full-stack developer experience with
-          one of the most popular open source CMS on the web - <span>WordPress</span>.
+          it very useful for front-end development. I'm currently learning more about <span>TypeScript</span>.
+          In the future I plan to learn <span>Tailwind</span>.  */}
+          {/* I also have full-stack developer experience with
+          one of the most popular open source CMS on the web - <span>WordPress</span>. */}
         </p>
         <p className="linked-in">
           Visit my <Link to="https://www.linkedin.com/in/david-kalmus-5b6b99299/" target="_blank">LinkedIn</Link> for more details.

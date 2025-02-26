@@ -67,43 +67,39 @@ export const socials = [
 export const icons = [
   {
     icon: "devicon-html5-plain",
-    language: "HTML5",
+    language: "HTML",
   },
   {
     icon: "devicon-css3-plain",
-    language: "CSS3",
+    language: "CSS",
   },
   {
     icon: "devicon-javascript-plain",
     language: "JavaScript",
   },
   {
-    icon: "devicon-react-original",
-    language: "React",
+    icon: "devicon-typescript-plain",
+    language: "TypeScript",
   },
   {
-    icon: "devicon-wordpress-plain",
-    language: "WordPress",
+    icon: "devicon-react-original",
+    language: "React JS",
+  },
+  { 
+    icon: "devicon-tailwindcss-original",
+    language: "Tailwind",
   },
   { 
     icon: "devicon-sass-original",
     language: "SASS",
   },
   {
-    icon: "devicon-bootstrap-plain",
-    language: "Bootstrap"
+    icon: "devicon-wordpress-plain",
+    language: "WordPress",
   },
   {
-    icon: "devicon-mysql-plain",
-    language: "MySQL",
-  },
-  {
-    icon: "devicon-firebase-plain",
-    language: "Firebase",
-  },
-  {
-    icon: "devicon-figma-plain",
-    language: "Figma",
+    icon: "devicon-git-plain",
+    language: "Git",
   },
   {
     icon: "devicon-vscode-plain",
@@ -112,7 +108,23 @@ export const icons = [
   {
     icon: "devicon-github-original",
     language: "GitHub",
-  }
+  },
+  {
+    icon: "devicon-figma-plain",
+    language: "Figma",
+  },
+  // {
+  //   icon: "devicon-bootstrap-plain",
+  //   language: "Bootstrap"
+  // },
+  // {
+  //   icon: "devicon-mysql-plain",
+  //   language: "MySQL",
+  // },
+  // {
+  //   icon: "devicon-firebase-plain",
+  //   language: "Firebase",
+  // },
 ]
 
 export const allProjects = [
