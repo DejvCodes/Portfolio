@@ -15,7 +15,7 @@ const AboutMeSection = () => {
           great coffee and of course coding.
         </p>
         <p className="about-me-third-description">Most of the time you can find me coding or at the gym.</p>
-        <p className="about-me-fourth-description">My favorite way to relax? Travelling.</p>
+        <p className="about-me-fourth-description">My favourite way to relax? Travelling.</p>
       </div>
       <div className="about-me-img">
         <img src={aboutMeImg} alt="DejvCodes - David Kalmus - About Me" />
