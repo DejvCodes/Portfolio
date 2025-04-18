@@ -85,10 +85,10 @@ export const icons = [
     icon: "devicon-react-original",
     language: "React JS",
   },
-  { 
-    icon: "devicon-tailwindcss-original",
-    language: "Tailwind",
-  },
+  // { 
+  //   icon: "devicon-tailwindcss-original",
+  //   language: "Tailwind",
+  // },
   { 
     icon: "devicon-sass-original",
     language: "SASS",
